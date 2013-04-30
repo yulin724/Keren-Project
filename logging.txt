@@ -1,0 +1,13 @@
+[Info] [11:13:00AM] New Connection from: 192.168.5.98
+[Info] [11:13:19AM] Client Disconnected: 192.168.5.98
+[Info] [11:19:04AM] New Connection from: 192.168.5.98
+[Info] [11:19:07AM] Client Disconnected: 192.168.5.98
+[Info] [11:24:19AM] New Connection from: 127.0.0.1
+[Info] [11:24:24AM] Client Disconnected: 127.0.0.1
+[Info] [11:25:44AM] New Connection from: 127.0.0.1
+[Info] [11:25:47AM] Client Disconnected: 127.0.0.1
+[Info] [11:25:54AM] New Connection from: 127.0.0.1
+[Info] [11:25:56AM] Client Disconnected: 127.0.0.1
+[Info] [13:03:05PM] Test Module run out. 
+[Info] [13:03:05PM] Roni Accessed the Server.
+[Warning] [13:03:05PM] Unverified android device tried to access the server: 35000000000000

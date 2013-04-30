@@ -1,0 +1,8 @@
+Weather Supply by Roni Gorodetsky
+----------------------------------
+
+[*] Database Created with the following Countrys in it:
+
+~ Israel
+~ Afghanistan
+~ Antartica
