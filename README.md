@@ -8,7 +8,7 @@ Whatever you need done, she will do with your consent.
 
 So far we have more or less implemented these features (and this is only a small part):
 
- - Speech recognition - within the SL4A, Android APP Ineeded. (Thanks to Google Voice Recognition Android API)
+ - Speech recognition - within the SL4A, Android APP needed. (Thanks to Google Voice Recognition Android API)
  - Recognize the language - Credit to the Author Kent Johnson for the package used.
  - Text-to-Speech in any language - Not completely ready, code not included yet. (Thanks to Google Translate TTS)
  - Weather - Almost Ready.
