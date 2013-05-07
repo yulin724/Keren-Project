@@ -28,7 +28,12 @@ So far we have more or less implemented these features (and this is only a small
 
 # Bugs:
 
- - UTF-8 Problem - Can't send Hebrew/Russian or other unique language strings.
+ [Solved] - UTF-8 Problem - Can't send Hebrew/Russian or other unique language strings.
+
+
+[07/05/2013] Update: All the Server requests are being logged into the logging file,
+		     you can't see the request message on the Server anymore, you don't need it anyway.
+		     I'm working now on the command recognition in the server side, stay tuned!
  
 We hope to see you contribute to our project.
 

@@ -11,3 +11,5 @@
 [Info] [13:03:05PM] Test Module run out. 
 [Info] [13:03:05PM] Roni Accessed the Server.
 [Warning] [13:03:05PM] Unverified android device tried to access the server: 35000000000000
+[Info] [21:09:39PM] New Connection from: 10.0.0.13
+[Info] [21:09:46PM] Client Disconnected: 10.0.0.13
