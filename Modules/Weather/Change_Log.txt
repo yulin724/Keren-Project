@@ -6,3 +6,5 @@ Weather Supply by Roni Gorodetsky
 ~ Israel
 ~ Afghanistan
 ~ Antartica
+
+[*] Return Sentence created.

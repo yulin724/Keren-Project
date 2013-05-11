@@ -36,23 +36,36 @@ def main(location):
         cursor.execute(sql, [(Search_Query)])
         results = cursor.fetchall()[0]
         a=weather_for_zip((results)[2])
+
+        current_condition = a['current_condition']
+        current_temp = a['current_temp']
+        
+        
+        today = a['forecasts'][0]['date']
+        high = a['forecasts'][0]['high']
+        low = a['forecasts'][0]['low']
+        condition = a['forecasts'][0]['condition']
+        
         #print '=================================='
         #print '|',a['title'],'|'
         print '=================================='
-        print '|current condition=',a['current_condition']
-        print '|current temp     =',a['current_temp']
+        print '|current condition = ' + current_condition
+        print '|current temp      = ' + current_temp
         print '=================================='
-        print '|  today     =',a['forecasts'][0]['date']
-        print '|  hight     =',a['forecasts'][0]['high']
-        print '|  low       =',a['forecasts'][0]['low']
-        print '|  condition =',a['forecasts'][0]['condition']
+        print '|  today     = ' + today
+        print '|  hight     = ' + high
+        print '|  low       = ' + low
+        print '|  condition = ' + condition
         print '=================================='
         #print '|  tomorrow  =',a['forecasts'][1]['date']
         #print '|  hight     =',a['forecasts'][1]['high']
         #print '|  low       =',a['forecasts'][1]['low']
         #print '|  condition =',a['forecasts'][1]['condition']
         #print '=================================='
+
+        return "Today is " + today + ", The weather is expected to be between " + low + " and " + high + ", The current weather is " + current_temp + ", The sky is " + current_condition + " and it's expected to be " + condition
+        
     except:
         print("Something went wrong... maybe the City isn't in our database")
-
+        return 0
   #  main()
