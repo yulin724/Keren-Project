@@ -11,7 +11,7 @@ So far we have more or less implemented these features (and this is only a small
  - Speech recognition - within the SL4A, Android APP needed. (Thanks to Google Voice Recognition Android API)
  - Recognize the language - Credit to the Author Kent Johnson for the package used.
  - Text-to-Speech in any language - Not completely ready, code not included yet. (Thanks to Google Translate TTS)
- - Weather - Almost Ready. Update: Finished!
+ - Weather - Ready!
  - Profiles - Ready!
  - Log everything - Ready!
  - Verify legitimate requests - Ready! *Not included in the current client code.
@@ -36,7 +36,9 @@ So far we have more or less implemented these features (and this is only a small
 		     I'm working now on the command recognition in the server side, stay tuned!
 
 [11/05/2013] Update: Added test module, Weather function complete, returning full sentece with the current weather condition.
+
+[15/05/2013] Update: lot of new things, I just connected 8 channels relay, and it works like a charm.
+		     I was able to send commands through my android voice recognition to the server, and Power on the relay.
+		     There are still lot of bugs and I need contributers or it will take long time to finish this project.
  
 We hope to see you contribute to our project.
-
-Follow us on Twitter #KerenProject and stay tuned!

@@ -1,4 +1,4 @@
-[Info] [11:13:00AM] New Connection from: 192.168.5.98
+﻿[Info] [11:13:00AM] New Connection from: 192.168.5.98
 [Info] [11:13:19AM] Client Disconnected: 192.168.5.98
 [Info] [11:19:04AM] New Connection from: 192.168.5.98
 [Info] [11:19:07AM] Client Disconnected: 192.168.5.98
