@@ -10,7 +10,7 @@ So far we have more or less implemented these features (and this is only a small
 
  - Speech recognition - within the SL4A, Android APP needed. (Thanks to Google Voice Recognition Android API)
  - Recognize the language - Credit to the Author Kent Johnson for the package used.
- - Text-to-Speech in any language - Not completely ready, code not included yet. (Thanks to Google Translate TTS)
+ - Text-to-Speech in any language - ready! (Thanks to Google Translate TTS)
  - Weather - Ready!
  - Profiles - Ready!
  - Log everything - Ready!
@@ -24,12 +24,12 @@ So far we have more or less implemented these features (and this is only a small
  - Coffee Machine automation (Yes!)
  - An Automatic Plant Watering System.
  - Online IP Camera(s) Control
- - Native android application. (A Regular APK)
+ - Native android application. (A Regular APK) - Working on it.
 
 # Bugs:
 
- [Solved] - UTF-8 Problem - Can't send Hebrew/Russian or other unique language strings.
-
+[Solved] - UTF-8 Problem - Can't send Hebrew/Russian or other unique language strings.
+[Solved] - socket.error: [Errno 98] Address already in use - Fixed by Overwriting the socket port each startup.
 
 [07/05/2013] Update: All the Server requests are being logged into the logging file,
 		     you can't see the request message on the Server anymore, you don't need it anyway.
@@ -41,4 +41,9 @@ So far we have more or less implemented these features (and this is only a small
 		     I was able to send commands through my android voice recognition to the server, and Power on the relay.
 		     There are still lot of bugs and I need contributers or it will take long time to finish this project.
  
+[17/05/2013] Update: Repeating code at main.py fixed thanks to "Hydra Hacker", Google TTS Service added.
+		     More functions on the way, GPIO Function ready not yet uploaded, too many bugs ...
+		     Modules Folder Replaced with Functions Folder.
+		     Android Application is being developed at those days.
+
 We hope to see you contribute to our project.

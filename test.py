@@ -2,11 +2,11 @@
 
 import sys
 import time
-sys.path.append("Modules/Weather")
+sys.path.append("Functions/Weather")
 import Weather
-sys.path.append("Modules/Logger")
+sys.path.append("Functions/Logger")
 import logit
-sys.path.append("Modules/getProfileData")
+sys.path.append("Functions/getProfileData")
 import profileData
 
 print("------------------------ Check Weather -----------------------")

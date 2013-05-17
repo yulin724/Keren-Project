@@ -10,9 +10,10 @@
 [Info] [11:25:56AM] Client Disconnected: 127.0.0.1
 [Info] [13:03:05PM] Test Module run out. 
 [Info] [13:03:05PM] Roni Accessed the Server.
-[Warning] [13:03:05PM] Unverified android device tried to access the server: 35000000000000
-[Info] [21:09:39PM] New Connection from: 10.0.0.13
-[Info] [21:09:46PM] Client Disconnected: 10.0.0.13
-[Info] [22:32:18PM] Test Module run out. 
-[Info] [22:32:18PM] Dani Sample Accessed the Server.
-[Warning] [22:32:18PM] Unverified android device tried to access the server: 35651604000000
+
+[Info] [18:28:07PM] New Connection from: 192.168.1.14
+[Req] [18:28:09PM] New Request:  hey From: 192.168.1.14
+[Info] [18:28:12PM] Client Disconnected: 192.168.1.14
+[Info] [18:28:46PM] Test Module run out. 
+[Info] [18:28:46PM] Dani Sample Accessed the Server.
+[Warning] [18:28:46PM] Unverified android device tried to access the server: 35651604000000

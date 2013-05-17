@@ -4,7 +4,7 @@
 import sys
 import socket
 import time
-sys.path.append("Functions/guess_language")
+sys.path.append("Modules/guess_language")
 import guess_language
 
 def checkLanguage(msg):

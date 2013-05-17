@@ -5,7 +5,7 @@ import sqlite3
 import time
 import hashlib
 import sys
-sys.path.append("Modules/Logger")                                          # Get Weather Module Location.
+sys.path.append("Functions/Logger")                                          # Get Weather Module Location.
 import logit
 
 conn = sqlite3.connect("./Databases/Keren_DB.db")

@@ -6,15 +6,17 @@ import time                                                                     
 import sys                                                                             # Import the System Module.
 import urllib2
 
-sys.path.append("Functions/guess_language")                                            # Get Language Function
+sys.path.append("Modules/guess_language")                                            # Get Language Function
 import check_language                                                                  # Import Language Function
-sys.path.append("Functions/SL4A")
+sys.path.append("Modules/SL4A")
 import android
-sys.path.append("Modules/Weather")                                                     # Get Weather Module Location.
+sys.path.append("Functions/Weather")                                                     # Get Weather Module Location.
 import Weather                                                                         # Import the Weather module.
-sys.path.append("Modules/Logger")                                                      # Get Weather Module Location.
+sys.path.append("Functions/Logger")                                                      # Get Weather Module Location.
 import logit                                                                           # Import the Logger Module.
-   
+#sys.path.append("Functions/GoogleTTS")
+#import GoogleTTS
+
 print("***************************************************")
 print("*   _        _______  _______  _______  _         *")
 print("*  | \    /\(  ____ \(  ____ )(  ____ \( (    /|  *")
@@ -27,25 +29,9 @@ print("*  |_/    \/(_______/|/   \__/(_______/|/    )_)  *")
 print("*                                                 *")
 print("***************************************************")
 
-exception = 0
+def Main():
 
-# droid = android.Android(('0.0.0.0', 6789))                                           # Make contct with the android Public Server.
-   
-s = socket.socket()                                                                    # Create a socket object
-Server_HOST = socket.gethostname()                                                     # Get local machine name
-Server_PORT = 44444                                                                    # Reserve a port for your service
-         
-print '[-] Server started!'                                                            # Server Started Message
-time.sleep(1)                                                                          # Sleep 1 Second.
-print '[-] Waiting for clients...'                                                     # Waiting for Clients...
-s.bind((Server_HOST, Server_PORT))                                                     # Bind to the port
-
-
-while(exception == 0):
-   try:
-
-      class Main():
-
+         print '[-] Waiting for clients...' 
          s.listen(5)                                                                   # Now wait for client connection.
          c, addr = s.accept()                                                          # Establish connection with client.
          print '[-] Got connection from', addr[0]     
@@ -60,30 +46,35 @@ while(exception == 0):
                if(msg == ""):
                   print '[-] Client Disconnected...'
                   logit.logger("Info","Client Disconnected: " + addr[0])
-                  time.sleep(1)
-                  print '[-] Waiting for clients...'
-                  s.listen(1)                                                          # wait for client connection.
-                  c, addr = s.accept()                                                 # Establish connection with client.
-                  print '[-] Got connection from', addr[0]
-                  logit.logger("Info","New Connection from: " + addr[0])               # Log New Client Connection
+                  Main()
                else:
                   language = check_language.checkLanguage(msg)                         # Check For the Request Language
-                  print language
                   continue                                                             # Don't stop, Continue
             except:                                                                    # If Client disconnect, then....
                print '[-] Client Disconnected...'
                logit.logger("Info","Client Disconnected: " + addr[0])
-            
                time.sleep(1)
-            
-               print '[-] Waiting for clients...'
-       
-               s.listen(1)                                                             # wait for client connection.
-               c, addr = s.accept()                                                    # Establish connection with client.
-               print '[-] Got connection from', addr[0]
-            
-               logit.logger("Info","New Connection from: " + addr[0])                  # Log New Client Connection
-               continue                                                                # Continue to do the same in loop.
+               Main()
+               continue               
+
+exception = 0
+
+# droid = android.Android(('0.0.0.0', 6789))                                           # Make contct with the android Public Server.
+
+s = socket.socket()                                                                    # Create a socket object
+Server_HOST = socket.gethostname()                                                     # Get local machine name
+Server_PORT = 44444                                                                    # Reserve a port for your service
+         
+print '[-] Server started!'                                                            # Server Started Message
+time.sleep(1)                                                                          # Sleep 1 Second.                                                    # Waiting for Clients...
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+s.bind((Server_HOST, Server_PORT))                                                     # Bind to the port
+Main()
+
+while(exception == 0):
+   try:
+
+      Main()                                                 # Continue to do the same in loop.
 
    except (KeyboardInterrupt, SystemExit):                                             # If Server Crashed then...
       
