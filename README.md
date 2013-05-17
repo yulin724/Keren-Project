@@ -31,6 +31,8 @@ So far we have more or less implemented these features (and this is only a small
 [Solved] - UTF-8 Problem - Can't send Hebrew/Russian or other unique language strings.
 [Solved] - socket.error: [Errno 98] Address already in use - Fixed by Overwriting the socket port each startup.
 
+# Updates:
+
 [07/05/2013] Update: All the Server requests are being logged into the logging file,
 		     you can't see the request message on the Server anymore, you don't need it anyway.
 		     I'm working now on the command recognition in the server side, stay tuned!
